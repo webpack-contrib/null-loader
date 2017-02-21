@@ -15,7 +15,7 @@
 <h2 align="center">Install</h2>
 
 ```bash
-npm i -D null-loader
+npm i null-loader --save
 ```
 
 <h2 align="center">Maintainers</h2>
