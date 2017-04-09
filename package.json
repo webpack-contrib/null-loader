@@ -3,6 +3,9 @@
   "version": "0.1.1",
   "description": "A loader that returns an empty module.",
   "main": "dist/cjs.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "jest",
     "webpack-defaults": "webpack-defaults",
@@ -22,10 +25,6 @@
     "travis:lint": "yarn run lint && yarn run security",
     "travis:test": "yarn run test"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/webpack/null-loader.git"
-  },
   "keywords": [
     "webpack",
     "loader",
@@ -33,9 +32,6 @@
   ],
   "author": "Tobias Koppers @sokra",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/webpack/null-loader/issues"
-  },
   "homepage": "https://github.com/webpack/null-loader",
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -59,9 +55,13 @@
   "engines": {
     "node": ">= 4.3 < 5.0.0 || >= 5.10"
   },
-  "files": [
-    "dist"
-  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webpack-contrib/null-loader.git"
+  },
+  "bugs": {
+    "url": "https://github.com/webpack-contrib/null-loader/issues"
+  },
   "pre-commit": "lint-staged",
   "lint-staged": {
     "*.js": [
