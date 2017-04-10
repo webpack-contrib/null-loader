@@ -18,6 +18,25 @@
 npm i null-loader --save
 ```
 
+<h2 align="center">Examples</h2>
+
+One use for this loader is to silence modules imported by a dependency. Say, for example, your project relies on an ES6 library that imports a polyfill you don't need, so removing it will cause no loss in functionality. Test for the path to the polyfill and it won't be included in your bundle:
+
+```js
+const path = require('path');
+
+module.exports = {
+  module: {
+    rules: [
+      {
+        test: path.resolve(__dirname, 'node_modules/library/polyfill.js'),
+        use: 'null-loader'
+      }
+    ]
+  }
+}
+```
+
 <h2 align="center">Maintainers</h2>
 
 <table>
