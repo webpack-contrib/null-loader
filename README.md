@@ -1,5 +1,7 @@
 [![npm][npm]][npm-url]
 [![deps][deps]][deps-url]
+[![test][test]][test-url]
+[![coverage][cover]][cover-url]
 [![chat][chat]][chat-url]
 
 <div align="center">
@@ -51,7 +53,6 @@ npm i null-loader --save
   <tbody>
 </table>
 
-
 [npm]: https://img.shields.io/npm/v/null-loader.svg
 [npm-url]: https://npmjs.com/package/null-loader
 
@@ -60,3 +61,9 @@ npm i null-loader --save
 
 [chat]: https://img.shields.io/badge/gitter-webpack%2Fwebpack-brightgreen.svg
 [chat-url]: https://gitter.im/webpack/webpack
+
+[test]: http://img.shields.io/travis/webpack-contrib/null-loader.svg
+[test-url]: https://travis-ci.org/webpack-contrib/null-loader
+
+[cover]: https://codecov.io/gh/webpack-contrib/null-loader/branch/master/graph/badge.svg
+[cover-url]: https://codecov.io/gh/webpack-contrib/null-loader
