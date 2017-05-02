@@ -9,8 +9,6 @@
   ],
   "license": "MIT",
   "scripts": {
-    "test": "jest",
-    "webpack-defaults": "webpack-defaults",
     "start": "yarn run serve:dev src",
     "build": "cross-env NODE_ENV=production babel src -d dist --ignore 'src/**/*.test.js'",
     "clean:dist": "del-cli dist",
@@ -21,11 +19,13 @@
     "release": "yarn run standard-version",
     "security": "nsp check",
     "serve:dev": "nodemon $2 --exec babel-node",
+    "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --collectCoverageFrom='src/**/*.js' --coverage",
     "travis:coverage": "yarn run test:coverage",
     "travis:lint": "yarn run lint && yarn run security",
-    "travis:test": "yarn run test"
+    "travis:test": "yarn run test",
+    "webpack-defaults": "webpack-defaults"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
