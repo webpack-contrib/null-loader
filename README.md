@@ -1,36 +1,47 @@
-[![npm][npm]][npm-url]
-[![deps][deps]][deps-url]
-[![test][test]][test-url]
-[![coverage][cover]][cover-url]
-[![chat][chat]][chat-url]
-
 <div align="center">
-  <!-- replace with accurate logo e.g from https://worldvectorlogo.com/ -->
   <a href="https://github.com/webpack/webpack">
-    <img width="200" height="200" vspace="" hspace="25"
-      src="https://cdn.rawgit.com/webpack/media/e7485eb2/logo/icon.svg">
+    <img width="200" height="200" src="https://webpack.js.org/assets/icon-square-big.svg">
   </a>
-  <h1>Null Loader</h1>
-  <p>A loader that returns an empty module.<p>
 </div>
 
-<h2 align="center">Install</h2>
+[![npm][npm]][npm-url]
+[![node][node]][node-url]
+[![deps][deps]][deps-url]
+[![tests][tests]][tests-url]
+[![chat][chat]][chat-url]
 
-```bash
-npm i null-loader --save
+# null-loader
+
+A webpack loader that returns an empty module.
+
+One use for this loader is to silence modules imported by a dependency. Say, for
+example, your project relies on an ES6 library that imports a polyfill you don't
+need, so removing it will cause no loss in functionality.
+
+## Requirements
+
+This module requires a minimum of Node v6.9.0 and Webpack v4.0.0.
+
+## Getting Started
+
+To begin, you'll need to install `null-loader`:
+
+```console
+$ npm install null-loader --save-dev
 ```
 
-<h2 align="center">Examples</h2>
-
-One use for this loader is to silence modules imported by a dependency. Say, for example, your project relies on an ES6 library that imports a polyfill you don't need, so removing it will cause no loss in functionality. Test for the path to the polyfill and it won't be included in your bundle:
+Then add the loader to your `webpack` config. For example:
 
 ```js
+// webpack.config.js
 const path = require('path');
 
 module.exports = {
   module: {
     rules: [
       {
+        // Test for a polyfill (or any file) and it won't be included in your
+        // bundle
         test: path.resolve(__dirname, 'node_modules/library/polyfill.js'),
         use: 'null-loader'
       }
@@ -39,50 +50,32 @@ module.exports = {
 }
 ```
 
-<h2 align="center">Maintainers</h2>
+And run `webpack` via your preferred method.
 
-<table>
-  <tbody>
-    <tr>
-      <td align="center">
-        <img width="150" height="150"
-        src="https://avatars3.githubusercontent.com/u/166921?v=3&s=150">
-        </br>
-        <a href="https://github.com/bebraw">Juho Vepsäläinen</a>
-      </td>
-      <td align="center">
-        <img width="150" height="150"
-        src="https://avatars2.githubusercontent.com/u/8420490?v=3&s=150">
-        </br>
-        <a href="https://github.com/d3viant0ne">Joshua Wiens</a>
-      </td>
-      <td align="center">
-        <img width="150" height="150"
-        src="https://avatars3.githubusercontent.com/u/533616?v=3&s=150">
-        </br>
-        <a href="https://github.com/SpaceK33z">Kees Kluskens</a>
-      </td>
-      <td align="center">
-        <img width="150" height="150"
-        src="https://avatars3.githubusercontent.com/u/3408176?v=3&s=150">
-        </br>
-        <a href="https://github.com/TheLarkInn">Sean Larkin</a>
-      </td>
-    </tr>
-  <tbody>
-</table>
+## Contributing
+
+Please take a moment to read our contributing guidelines if you haven't yet done so.
+
+#### [CONTRIBUTING](./.github/CONTRIBUTING)
+
+## License
+
+#### [MIT](./LICENSE)
 
 [npm]: https://img.shields.io/npm/v/null-loader.svg
 [npm-url]: https://npmjs.com/package/null-loader
 
+[node]: https://img.shields.io/node/v/null-loader.svg
+[node-url]: https://nodejs.org
+
 [deps]: https://david-dm.org/webpack-contrib/null-loader.svg
 [deps-url]: https://david-dm.org/webpack-contrib/null-loader
 
-[chat]: https://img.shields.io/badge/gitter-webpack%2Fwebpack-brightgreen.svg
-[chat-url]: https://gitter.im/webpack/webpack
-
-[test]: http://img.shields.io/travis/webpack-contrib/null-loader.svg
-[test-url]: https://travis-ci.org/webpack-contrib/null-loader
+[tests]: 	https://img.shields.io/circleci/project/github/webpack-contrib/null-loader.svg
+[tests-url]: https://circleci.com/gh/webpack-contrib/null-loader
 
 [cover]: https://codecov.io/gh/webpack-contrib/null-loader/branch/master/graph/badge.svg
 [cover-url]: https://codecov.io/gh/webpack-contrib/null-loader
+
+[chat]: https://img.shields.io/badge/gitter-webpack%2Fwebpack-brightgreen.svg
+[chat-url]: https://gitter.im/webpack/webpack
