@@ -41,7 +41,7 @@
     "jest": "^19.0.2",
     "lint-staged": "^3.4.0",
     "nodemon": "^1.11.0",
-    "nsp": "^2.6.3",
+    "nsp": "^3.2.1",
     "pre-commit": "^1.2.2",
     "standard-version": "^4.0.0",
     "webpack-defaults": "^0.4.6"
