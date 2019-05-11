@@ -96,7 +96,7 @@ exports[`null-loader should works 1`] = `
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-// empty (null-loader)
+/* empty (null-loader) */
 
 /***/ })
 

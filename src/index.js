@@ -4,7 +4,7 @@ import validateOptions from 'schema-utils';
 import schema from './options.json';
 
 export default function() {
-  return '// empty (null-loader)';
+  return '/* empty (null-loader) */';
 }
 
 export function pitch() {
@@ -12,5 +12,5 @@ export function pitch() {
 
   validateOptions(schema, options, 'Null Loader');
 
-  return '// empty (null-loader)';
+  return '/* empty (null-loader) */';
 }
