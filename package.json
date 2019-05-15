@@ -49,6 +49,7 @@
     "babel-jest": "^24.8.0",
     "commitlint-azure-pipelines-cli": "^1.0.1",
     "cross-env": "^5.2.0",
+    "css-loader": "^2.1.1",
     "del": "^4.1.1",
     "del-cli": "^1.1.0",
     "eslint": "^5.16.0",
