@@ -30,7 +30,7 @@ describe('validation', () => {
     expect(errors).toMatchSnapshot('errors');
   });
 
-  it.only('with unknown options', async () => {
+  it('with unknown options', async () => {
     const config = {
       loader: {
         test: /\.js$/,

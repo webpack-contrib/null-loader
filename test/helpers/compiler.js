@@ -32,6 +32,7 @@ const output = (config) => {
     ),
     filename: '[name].js',
     chunkFilename: '[name].chunk.js',
+    pathinfo: typeof config.pathinfo !== 'undefined' ? config.pathinfo : true,
   };
 };
 
