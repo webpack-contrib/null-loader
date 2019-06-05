@@ -140,7 +140,7 @@ module. Thankfully, Github provides a means to do this. Add a dependency to the
 ```json
 {
   "devDependencies": {
-    "${package}": "webpack-contrib/${package}#{id}/head"
+    "null-loader": "webpack-contrib/null-loader#{id}/head"
   }
 }
 ```
