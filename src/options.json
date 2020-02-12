@@ -1,3 +1,9 @@
 {
-  "additionalProperties": false
+  "additionalProperties": false,
+  "properties": {
+    "comment": {
+      "type": "string",
+      "description": "add your own comment in module, default null"
+    }
+  }
 }

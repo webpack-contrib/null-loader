@@ -49,6 +49,29 @@ module.exports = {
 
 And run `webpack` via your preferred method.
 
+## Options
+
+### `comment`
+
+Type : `String`
+
+Add your own comment which will be exported from the module
+
+```js
+// webpack.config.js
+...
+ module: {
+    rules: [
+      {
+        test: /\.js$/,
+        loader: 'null-loader',
+        options : { comment : 'COMMENTS HERE'}
+      }
+    ]
+  }
+...
+```
+
 ## Contributing
 
 Please take a moment to read our contributing guidelines if you haven't yet done so.

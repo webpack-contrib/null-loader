@@ -60,4 +60,23 @@ describe('null-loader', () => {
 
     expect(stats.compilation.assets['main.js'].source()).toMatchSnapshot();
   });
+
+  it('should works with comments', async () => {
+    const config = {
+      pathinfo: false,
+      devtool: false,
+      loader: {
+        test: /\.js$/,
+        options: { comment: 'null-loader test suite' },
+      },
+    };
+
+    const stats = await webpack('fixture.js', config);
+    const { warnings, errors } = stats.toJson();
+
+    expect(warnings).toMatchSnapshot('warnings');
+    expect(errors).toMatchSnapshot('errors');
+
+    expect(stats.compilation.assets['main.js'].source()).toMatchSnapshot();
+  });
 });
