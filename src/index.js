@@ -3,7 +3,7 @@ import validateOptions from 'schema-utils';
 
 import schema from './options.json';
 
-export default function () {
+export default function loader() {
   return '';
 }
 
