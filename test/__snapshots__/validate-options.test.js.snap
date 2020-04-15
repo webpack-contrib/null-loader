@@ -1,49 +1,49 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`validate options should throw an error on the "unknown" option with "/test/" value 1`] = `
-"Invalid configuration object. Object has been initialized using a configuration object that does not match the API schema.
- - configuration has an unknown property 'unknown' | should be any non-object. These properties are valid:
+"Invalid options object. Null Loader has been initialized using an options object that does not match the API schema.
+ - options has an unknown property 'unknown' | should be any non-object. These properties are valid:
    object {}"
 `;
 
 exports[`validate options should throw an error on the "unknown" option with "[]" value 1`] = `
-"Invalid configuration object. Object has been initialized using a configuration object that does not match the API schema.
- - configuration has an unknown property 'unknown' | should be any non-object. These properties are valid:
+"Invalid options object. Null Loader has been initialized using an options object that does not match the API schema.
+ - options has an unknown property 'unknown' | should be any non-object. These properties are valid:
    object {}"
 `;
 
 exports[`validate options should throw an error on the "unknown" option with "{"foo":"bar"}" value 1`] = `
-"Invalid configuration object. Object has been initialized using a configuration object that does not match the API schema.
- - configuration has an unknown property 'unknown' | should be any non-object. These properties are valid:
+"Invalid options object. Null Loader has been initialized using an options object that does not match the API schema.
+ - options has an unknown property 'unknown' | should be any non-object. These properties are valid:
    object {}"
 `;
 
 exports[`validate options should throw an error on the "unknown" option with "{}" value 1`] = `
-"Invalid configuration object. Object has been initialized using a configuration object that does not match the API schema.
- - configuration has an unknown property 'unknown' | should be any non-object. These properties are valid:
+"Invalid options object. Null Loader has been initialized using an options object that does not match the API schema.
+ - options has an unknown property 'unknown' | should be any non-object. These properties are valid:
    object {}"
 `;
 
 exports[`validate options should throw an error on the "unknown" option with "1" value 1`] = `
-"Invalid configuration object. Object has been initialized using a configuration object that does not match the API schema.
- - configuration has an unknown property 'unknown' | should be any non-object. These properties are valid:
+"Invalid options object. Null Loader has been initialized using an options object that does not match the API schema.
+ - options has an unknown property 'unknown' | should be any non-object. These properties are valid:
    object {}"
 `;
 
 exports[`validate options should throw an error on the "unknown" option with "false" value 1`] = `
-"Invalid configuration object. Object has been initialized using a configuration object that does not match the API schema.
- - configuration has an unknown property 'unknown' | should be any non-object. These properties are valid:
+"Invalid options object. Null Loader has been initialized using an options object that does not match the API schema.
+ - options has an unknown property 'unknown' | should be any non-object. These properties are valid:
    object {}"
 `;
 
 exports[`validate options should throw an error on the "unknown" option with "test" value 1`] = `
-"Invalid configuration object. Object has been initialized using a configuration object that does not match the API schema.
- - configuration has an unknown property 'unknown' | should be any non-object. These properties are valid:
+"Invalid options object. Null Loader has been initialized using an options object that does not match the API schema.
+ - options has an unknown property 'unknown' | should be any non-object. These properties are valid:
    object {}"
 `;
 
 exports[`validate options should throw an error on the "unknown" option with "true" value 1`] = `
-"Invalid configuration object. Object has been initialized using a configuration object that does not match the API schema.
- - configuration has an unknown property 'unknown' | should be any non-object. These properties are valid:
+"Invalid options object. Null Loader has been initialized using an options object that does not match the API schema.
+ - options has an unknown property 'unknown' | should be any non-object. These properties are valid:
    object {}"
 `;

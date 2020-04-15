@@ -10,7 +10,10 @@ export default function loader() {
 export function pitch() {
   const options = loaderUtils.getOptions(this);
 
-  validateOptions(schema, options, 'Null Loader');
+  validateOptions(schema, options, {
+    name: 'Null Loader',
+    baseDataPath: 'options',
+  });
 
   return '';
 }
