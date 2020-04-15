@@ -3,12 +3,12 @@ import validateOptions from 'schema-utils';
 
 import schema from './options.json';
 
-export default function() {
+export default function () {
   return '';
 }
 
 export function pitch() {
-  const options = loaderUtils.getOptions(this) || {};
+  const options = loaderUtils.getOptions(this);
 
   validateOptions(schema, options, 'Null Loader');
 
