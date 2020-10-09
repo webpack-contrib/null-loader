@@ -1,5 +1,5 @@
-import loaderUtils from 'loader-utils';
-import validateOptions from 'schema-utils';
+import { getOptions } from 'loader-utils';
+import { validate } from 'schema-utils';
 
 import schema from './options.json';
 
@@ -8,9 +8,9 @@ export default function loader() {
 }
 
 export function pitch() {
-  const options = loaderUtils.getOptions(this);
+  const options = getOptions(this);
 
-  validateOptions(schema, options, {
+  validate(schema, options, {
     name: 'Null Loader',
     baseDataPath: 'options',
   });
